@@ -16,6 +16,7 @@ form.addEventListener('submit', (e) => {
         success = 0
     } else {
         console.log('Success.');
+        success = 1
     };
 
     if (lastName.value === '' || lastName.value == null) {
@@ -23,6 +24,7 @@ form.addEventListener('submit', (e) => {
         success = 0
     } else {
         console.log('Success.');
+        success = 1
     };
 
     if (email.value === '' || email.value == null) {
@@ -30,6 +32,7 @@ form.addEventListener('submit', (e) => {
         success = 0
     } else {
         console.log('Success.');
+        success = 1
     };
 
     if(checkbox.checked == false) {
@@ -37,6 +40,7 @@ form.addEventListener('submit', (e) => {
         success = 0
     } else {
         console.log('Success.');
+        success = 1
     };
 
     if (password.value.length <= 6) {
@@ -54,6 +58,7 @@ form.addEventListener('submit', (e) => {
 
     if (repeatPassword.value === password.value || repeatPassword.value == password.value) {
         console.log('Success.');
+        success = 1
     } else {
         console.log('Password must match');
         success = 0
